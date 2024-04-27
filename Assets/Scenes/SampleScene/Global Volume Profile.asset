@@ -1,0 +1,2315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9208237566472900618
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeticCloud
+  m_EditorClassIdentifier: Assembly-CSharp::VolumetricFog/VolumeticCloud
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  baseColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  densityNoise:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  densityNoiseScale:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1}
+  densityNoiseOffset:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  absorption:
+    m_OverrideState: 1
+    m_Value: 1
+  lightAbsorption:
+    m_OverrideState: 1
+    m_Value: 1
+  lightPower:
+    m_OverrideState: 1
+    m_Value: 1
+  densityNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.1
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 0.1
+--- !u!114 &-8968630240394983610
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-8722292642158189431
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  EdgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 0
+    m_Value: 1
+  Sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-8433926358179325387
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomVolumeComponent
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.002
+  FogStart:
+    m_OverrideState: 1
+    m_Value: 3.89
+  FogEnd:
+    m_OverrideState: 1
+    m_Value: 9.93
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.22071913, g: 0.24101104, b: 0.3018868, a: 1}
+  textureNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  textureNoiseAmount:
+    m_OverrideState: 1
+    m_Value: 1
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.3
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 4.7
+--- !u!114 &-8350422207484400693
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
+  m_EditorClassIdentifier: 
+  active: 1
+  temperature:
+    m_OverrideState: 1
+    m_Value: 53.9
+  tint:
+    m_OverrideState: 0
+    m_Value: 21.8
+--- !u!114 &-8316789077255568793
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.96405524, y: 1, z: 0.9952246, w: -0.00034495041}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.9916477, y: 0.9515804, z: 1, w: 0}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.9876779, y: 1, z: 0.99677616, w: 0}
+--- !u!114 &-8289868715443041751
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5660378, g: 0.31772876, b: 0.31772876, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-7915340314185035918
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.267
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.2
+  rounded:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-7425586190910923151
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9589177, z: 0.8725033, w: 0}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.90848696, z: 0.9642691, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 0.99590683, y: 1, z: 0.96388966, w: 0}
+  shadowsStart:
+    m_OverrideState: 0
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 0
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 0
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 0
+    m_Value: 1
+--- !u!114 &-7108422887297986550
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6603774, g: 0.6136526, b: 0.6136526, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-6531475427641072977
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
+--- !u!114 &-6484417398825475334
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeTargetOutline
+  m_EditorClassIdentifier: Assembly-CSharp::TargetOutline/VolumeTargetOutline
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  edgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  backgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  sampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.65
+  sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-6416802635583245622
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6226415, g: 0.49047703, b: 0.49047703, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-6331320053517432747
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-6197748557501458706
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-5895003414864203861
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
+  gaussianStart:
+    m_OverrideState: 1
+    m_Value: 46.9
+  gaussianEnd:
+    m_OverrideState: 1
+    m_Value: 90
+  gaussianMaxRadius:
+    m_OverrideState: 1
+    m_Value: 0.5
+  highQualitySampling:
+    m_OverrideState: 1
+    m_Value: 1
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 2.54
+  aperture:
+    m_OverrideState: 1
+    m_Value: 5.6
+  focalLength:
+    m_OverrideState: 1
+    m_Value: 50
+  bladeCount:
+    m_OverrideState: 1
+    m_Value: 5
+  bladeCurvature:
+    m_OverrideState: 1
+    m_Value: 1
+  bladeRotation:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-5561105151367932955
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-5263987961764132448
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-4782749389789923444
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  EdgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 0
+    m_Value: 1
+  Sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-4364766546501664975
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6132076, g: 0.39627093, b: 0.39627093, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-3857023489564324414
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomRenderPass/CustomVolumeComponent
+  active: 1
+  <displayName>k__BackingField: 
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  FogDensity:
+    m_OverrideState: 0
+    m_Value: 1
+  FogStart:
+    m_OverrideState: 0
+    m_Value: 0
+  FogEnd:
+    m_OverrideState: 0
+    m_Value: 2
+  FogColor:
+    m_OverrideState: 0
+    m_Value:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+--- !u!114 &-3659609682708855041
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-3601077055778939082
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5849056, g: 0.3724635, b: 0.3724635, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 64
+--- !u!114 &-3508580320098794526
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-2445931870331568407
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-2308928347822313300
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomVolumeComponent
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.02
+  FogStart:
+    m_OverrideState: 1
+    m_Value: 9.7
+  FogEnd:
+    m_OverrideState: 0
+    m_Value: 2
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  textureNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  textureNoiseAmount:
+    m_OverrideState: 1
+    m_Value: 1
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 1
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-2083907769930650441
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-1947627707658913015
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-1612737492920725851
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.754717, g: 0.5802777, b: 0.5802777, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-1563919462245331560
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 1
+    m_Value: 1
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0
+  colorFilter:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 1
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: -10
+--- !u!114 &-1323327932165871904
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.8018868, g: 0.74514955, b: 0.74514955, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-1045122198982088792
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7264151, g: 0.60648805, b: 0.60648805, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-861936306045834774
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &-814655777461433191
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.764151, g: 0.5586953, b: 0.5586953, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-709854833532468197
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.9
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.5
+  scatter:
+    m_OverrideState: 1
+    m_Value: 0.7
+  clamp:
+    m_OverrideState: 1
+    m_Value: 65472
+  tint:
+    m_OverrideState: 1
+    m_Value: {r: 0.9964477, g: 1, b: 0.7122642, a: 1}
+  highQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 0
+  skipIterations:
+    m_OverrideState: 1
+    m_Value: 1
+  dirtTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  dirtIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-477137101585604733
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomVolumeComponent
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 0
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.005
+  FogStart:
+    m_OverrideState: 1
+    m_Value: 10
+  FogEnd:
+    m_OverrideState: 0
+    m_Value: 2
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  textureNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  textureNoiseAmount:
+    m_OverrideState: 1
+    m_Value: 0.5
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.5
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-222505462960522573
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7075472, g: 0.45056072, b: 0.45056072, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &-68146654021413517
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6886792, g: 0.58147913, b: 0.58147913, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -6531475427641072977}
+  - {fileID: -1563919462245331560}
+  - {fileID: -8316789077255568793}
+  - {fileID: -709854833532468197}
+  - {fileID: -7915340314185035918}
+  - {fileID: -5895003414864203861}
+  - {fileID: -8350422207484400693}
+  - {fileID: -7425586190910923151}
+  - {fileID: 6598778967441366491}
+--- !u!114 &69595670028197621
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5943396, g: 0.3253024, b: 0.3224012, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &535168226925634112
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.49056602, g: 0.14578141, b: 0.14578141, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &821961111805732641
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomVolumeComponent
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.46
+  FogStart:
+    m_OverrideState: 1
+    m_Value: 46.99
+  FogEnd:
+    m_OverrideState: 1
+    m_Value: 6.4
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+  textureNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  textureNoiseAmount:
+    m_OverrideState: 1
+    m_Value: 1
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.38
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 0.32
+--- !u!114 &976557542196425548
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.754717, g: 0.5161979, b: 0.5161979, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &1468400160071930966
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.745283, g: 0.5730242, b: 0.5730242, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &1555542864108111190
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &2539696254059121125
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.8584906, g: 0.64386797, b: 0.64386797, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 64
+--- !u!114 &2879041440845379232
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &3093899215642326809
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.8113208, g: 0.66206837, b: 0.66206837, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &3128691478688727261
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  EdgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 0
+    m_Value: 1
+  Sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &3211367488597456513
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7264151, g: 0.5311054, b: 0.5311054, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &3638178483673550832
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7830189, g: 0.6685208, b: 0.6685208, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &3842246081363433818
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &4033808792887370180
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &4978716179461693468
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.754717, g: 0.5161979, b: 0.5161979, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &5112507770954990967
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &5991202292632001316
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7735849, g: 0.56559277, b: 0.56559277, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &6037637559274877134
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &6040395130612386791
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  EdgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 0
+    m_Value: 1
+  Sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &6278455696000738153
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6415094, g: 0.37824848, b: 0.37824848, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &6314830179362229726
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomVolumeComponent
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 0.02
+  FogStart:
+    m_OverrideState: 1
+    m_Value: 5
+  FogEnd:
+    m_OverrideState: 1
+    m_Value: 100
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.4258633, g: 0.5471698, b: 0.5471698, a: 1}
+  textureNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  textureNoiseAmount:
+    m_OverrideState: 1
+    m_Value: 5
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.1
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 0.1
+--- !u!114 &6319434193393170291
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &6598778967441366491
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &6824015295828300661
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeticCloud
+  m_EditorClassIdentifier: Assembly-CSharp::VolumetricFog/VolumeticCloud
+  active: 0
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  baseColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  densityNoise:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  densityNoiseScale:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1}
+  densityNoiseOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  absorption:
+    m_OverrideState: 0
+    m_Value: 1
+  lightAbsorption:
+    m_OverrideState: 0
+    m_Value: 1
+  lightPower:
+    m_OverrideState: 0
+    m_Value: 1
+  densityNoise2d:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 361893437b2ea8948b11272d67777d91, type: 3}
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0.1
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 0.01
+--- !u!114 &7222714382333552244
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &7438518849210570318
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7169812, g: 0.42274833, b: 0.42274833, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &7554923631654572450
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &7828384546144721133
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::FogWithDepthTexture/CustomRenderPass/CustomVolumeComponent
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &8591283634368487650
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  EdgeOnly:
+    m_OverrideState: 0
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 0
+    m_Value: 1
+  Sensitivity:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+--- !u!114 &8628554208416035650
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+--- !u!114 &8855897585392717163
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeOutline
+  m_EditorClassIdentifier: Assembly-CSharp::OutlinePostProcess/VolumeOutline
+  active: 1
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  EdgeOnly:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7924528, g: 0.35510856, b: 0.35510856, a: 1}
+  SampleDistance:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Sensitivity:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  layer:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295

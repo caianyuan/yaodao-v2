@@ -1,0 +1,56 @@
+{
+    "name": "CustomInput",
+    "maps": [
+        {
+            "name": "CameraControl",
+            "id": "34e6571a-14a7-4ca6-a73e-b0e764635000",
+            "actions": [
+                {
+                    "name": "XYAxis",
+                    "type": "PassThrough",
+                    "id": "91ab284b-2e7c-4223-a53e-25a5f3ee533b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "MouseRightDrag",
+                    "id": "15d2d12a-17d0-43f0-951f-9ab34658ed92",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XYAxis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Modifier",
+                    "id": "a669339d-fbe1-4481-a935-d66328fba8d3",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XYAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Binding",
+                    "id": "f61ed964-c44d-44a7-a439-6dc4c9432394",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "XYAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
